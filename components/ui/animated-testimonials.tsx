@@ -37,6 +37,7 @@ export const AnimatedTestimonials = ({
       const interval = setInterval(handleNext, 5000);
       return () => clearInterval(interval);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [autoplay]);
 
   const randomRotateY = () => {
@@ -79,6 +80,7 @@ export const AnimatedTestimonials = ({
                   }}
                   className="absolute inset-0 origin-bottom"
                 >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={testimonial.src}
                     alt={testimonial.name}
