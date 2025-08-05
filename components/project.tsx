@@ -1,10 +1,11 @@
-import { FaComputer } from "react-icons/fa6";
+import { FaArrowDown } from "react-icons/fa";
 import { BackgroundGradient } from "./ui/background-gradient";
+import { ProjectCards } from "./ui/project-cards";
 
 const Project = () => {
   return (
     <section
-      className="w-full py-20 px-4 flex flex-col items-center justify-center"
+      className="w-full py-40 px-4 flex flex-col items-center justify-center"
       id="projects"
     >
       <div className="w-full flex flex-col items-center justify-center max-w-4xl">
@@ -13,18 +14,13 @@ const Project = () => {
           className="bg-slate-950 p-4 rounded-3xl"
         >
           <div className="flex flex-col items-center justify-center p-4 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-foreground text-center w-full">
+            <h2 className="text-4xl font-bold text-center text-white">
               Projects <br />
-              Coming Soon ...
-            </h3>
-            {/* <ProjectsItems
-                id={1}
-                name="PC Builder"
-                description="A PC builder website"
-                link="https://pc-builder.com"
-                icon={<FaComputer className="text-4xl text-blue-500" />}
-                /> */}
-            {/* TODO: Add projects items here when data is ready */}
+              <div className="flex items-center justify-center mt-4 mb-4">
+                <FaArrowDown className="text-4xl text-white animate-bounce text-center" />
+              </div>
+            </h2>
+            <ProjectCards />
           </div>
         </BackgroundGradient>
       </div>
