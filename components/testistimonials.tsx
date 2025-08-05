@@ -4,7 +4,8 @@ import { BackgroundGradient } from "./ui/background-gradient";
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "Coming Soon ...............................",
+      quote:
+        "Ben has been an asset not just for me but for the entire team. His dedication, extensive technical knowledge, and unmatched performance have consistently enhanced production and boosted productivity. He's also solves problems way before they become issues, with Ben around its like playing development simulator on easy mode 😂. I genuinely couldn't imagine a better person to have on the team and by our side.",
       name: "Jack",
       designation: "CEO at Mivator",
       src: "/jack.jpg",
